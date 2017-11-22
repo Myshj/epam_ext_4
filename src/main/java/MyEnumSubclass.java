@@ -6,9 +6,7 @@ public class MyEnumSubclass extends MyEnum{
         init(MyEnumSubclass.class);
     }
 
-    public static Integer integer = 1;
-
-    public MyEnumSubclass(int ordinal, String name) {
+    protected MyEnumSubclass(int ordinal, String name) {
         super(ordinal, name);
     }
 }
