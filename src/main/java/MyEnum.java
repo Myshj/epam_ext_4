@@ -56,7 +56,7 @@ public abstract class MyEnum {
 
         field.set(
                 null,
-                clazz.getConstructor(int.class, String.class).newInstance(ordinal, field.getName())
+                clazz.getDeclaredConstructor(int.class, String.class).newInstance(ordinal, field.getName())
         );
     }
 
